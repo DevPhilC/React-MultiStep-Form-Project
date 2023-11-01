@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.right-img > img {
+  height: 100%;
+}
+
+.App {
+  font-family: Roboto;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.left-container {
+  width: 50%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: RGB(116, 94, 94);
+}
+
+.inner-left-container {
+  padding: 50px;
+  text-align: left;
+  color: white;
+}
+
+.inner-left-container > input {
+  margin: 15px 0;
+  margin-bottom: 25px;
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 1px solid white;
+  padding: 5px 0;
+}
+
+.inner-left-container > input:focus {
+  color: white;
+  outline: none;
+}
+
+::placeholder {
+  color: white;
+}
+
+.inner-left-container > button {
+  background-color: white;
+  border: none;
+  color: #745e5e;
+  padding: 5px 15px;
+}
+
+.stage-two-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.stage-two-buttons > button {
+  width: 30%;
+  font-size: 15px;
+  background-color: #745e5e;
+  color: white;
+  border: 1px solid white;
+  padding: 5px 0;
+}
+
+.stage-two-buttons > .selected-button {
+  color: #745e5e;
+  background-color: white;
+}
+
+.right-img {
+  width: 50%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 400px) {
+  .right-img {
+    display: none;
+  }
+  .left-container {
+    width: 100%;
+  }
+}
